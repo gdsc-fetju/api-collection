@@ -1,4 +1,5 @@
 import { IApiContent } from "@/interfaces/api-content.interface";
+import ApiCard from "./ApiCard";
 
 interface Props {
   apiList: IApiContent[];
@@ -12,11 +13,7 @@ function ApiList({ apiList }: Props) {
   return (
     <>
       {apiList.map((api, index) => (
-        // <ApiCard key={index} api={api} />
-        <>
-          {JSON.stringify(api)}
-          < br />
-        </>
+        <ApiCard key={index} api={api} />
       ))}
     </>
   )
