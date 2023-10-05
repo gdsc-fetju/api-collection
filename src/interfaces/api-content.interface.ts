@@ -4,6 +4,7 @@ export interface IApiContent {
   url: string;
   description: string;
   free: boolean;
+  image?: string;
 }
 
 export interface IApiContentList {
