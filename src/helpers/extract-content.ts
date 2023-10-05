@@ -1,7 +1,7 @@
-import matter from "gray-matter"
-import { join } from "path";
-import fs from "fs/promises";
-import { IApiContent } from "@/interfaces/api-content.interface";
+import matter from 'gray-matter';
+import { join } from 'path';
+import fs from 'fs/promises';
+import { IApiContent } from '@/interfaces/api-content.interface';
 
 const apiDirectory = join(process.cwd(), 'api');
 
