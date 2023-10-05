@@ -1,3 +1,4 @@
+import ApiList from "@/components/ApiList";
 import { getContent } from "@/helpers/extract-content";
 
 export default async function Home() {
@@ -5,6 +6,6 @@ export default async function Home() {
   console.log(allApiContent);
 
   return <main>
-    {JSON.stringify(allApiContent)}
+    <ApiList apiList={allApiContent} />
   </main>;
 }
