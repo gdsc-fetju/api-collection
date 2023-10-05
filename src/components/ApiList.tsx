@@ -11,11 +11,11 @@ function ApiList({ apiList }: Props) {
     return <p>No APIs found</p>
   }
   return (
-    <>
+    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       {apiList.map((api, index) => (
         <ApiCard key={index} api={api} />
       ))}
-    </>
+    </section>
   )
 }
 
