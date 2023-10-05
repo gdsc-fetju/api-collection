@@ -14,5 +14,5 @@ const config: any = {
     },
   },
   plugins: [],
-}
-export default config
+};
+export default config;
