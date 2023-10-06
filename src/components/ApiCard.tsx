@@ -10,13 +10,21 @@ function ApiCard({ api }: Props) {
     <div className='card w-96 bg-base-100 shadow-xl'>
       <figure>
         {/* TODO: Refactor this */}
-        {
-          api.image ? (
-            <Image src={`/images/${api.image}`} alt={api.name} width={100} height={100} />
-          ) : (
-            <Image src='/images/default.webp' alt={api.name} width={100} height={100} />
-          )
-        }
+        {api.image ? (
+          <Image
+            src={`/images/${api.image}`}
+            alt={api.name}
+            width={100}
+            height={100}
+          />
+        ) : (
+          <Image
+            src='/images/default.webp'
+            alt={api.name}
+            width={100}
+            height={100}
+          />
+        )}
       </figure>
       <div className='card-body'>
         <h2 className='card-title'>
