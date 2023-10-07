@@ -1,5 +1,5 @@
 ---
-name: Nba API
+name: NBA API
 categories:
   - Basketball
 url: https://app.balldontlie.io/
