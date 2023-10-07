@@ -2,8 +2,7 @@
 name: Anime API
 categories:
   - entertainment
-url: https://shorturl.at/afrF7
+url: https://anilist.gitbook.io
 description: Random pictures and information about anime characters, series, and genres.
 free: true
-
 ---
