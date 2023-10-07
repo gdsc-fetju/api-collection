@@ -1,11 +1,20 @@
+'use client';
 import { IApiContent } from '@/interfaces/api-content.interface';
 import ApiCard from './ApiCard';
+import { useEffect, useState } from 'react';
 
-interface Props {
-  apiList: IApiContent[];
-}
+function ApiList() {
+  // TODO: Setup filter with custom hook
+  const [apiList, setApiList] = useState<IApiContent[]>([]);
+  useEffect(() => {
+    (async () => {
+      const res = await fetch('/api/get-content');
+      const api = await res.json();
+      setApiList(api);
+      console.log(api);
+    })();
+  }, []);
 
-function ApiList({ apiList }: Props) {
   if (!apiList.length) {
     return <p>No APIs found</p>;
   }

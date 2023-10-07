@@ -1,11 +1,7 @@
 import ApiList from '@/components/ApiList';
 import Nav from '@/components/Nav';
-import { getContent } from '@/helpers/extract-content';
 
 export default async function Home() {
-  const allApiContent = await getContent();
-  // TODO: Use state for storing the filtered APIs
-
   return (
     <main>
       <Nav />
@@ -13,7 +9,7 @@ export default async function Home() {
       {/* TODO: Add Search Bar to Search for a Individual API */}
       {/* TODO: Add Filter the filteration of correct result */}
       <div className='flex justify-center gap-20'>
-        <ApiList apiList={allApiContent} />
+        <ApiList />
       </div>
     </main>
   );
