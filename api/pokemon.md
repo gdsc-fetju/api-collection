@@ -1,5 +1,5 @@
 ---
-name: Poke API   
+name: Poke API
 categories:
   - Entertainment
 url: https://pokeapi.co/
