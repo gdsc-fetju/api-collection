@@ -4,9 +4,10 @@ import fs from 'fs/promises';
 import { IApiContent } from '@/interfaces/api-content.interface';
 
 const apiDirectory = join(process.cwd(), 'api');
+let cache: IApiContent[];
 
 export async function getContent(): Promise<IApiContent[]> {
-  // const realSlug = slug.replace(/\.md$/, '');
+  if (cache) return cache;
   const apiContent: IApiContent[] = [];
   const files = await fs.readdir(apiDirectory);
   for (const file of files) {
@@ -15,5 +16,6 @@ export async function getContent(): Promise<IApiContent[]> {
     const { data } = matter(fileContents);
     apiContent.push(data as IApiContent);
   }
+  cache = apiContent;
   return apiContent;
 }
