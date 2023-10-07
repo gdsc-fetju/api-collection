@@ -10,7 +10,7 @@ function ApiCard({ api }: Props) {
     <div className='card w-96 bg-base-100 shadow-xl'>
       <figure>
         <Image
-          src={api.image ? api.image : '/images/default.webp'}
+          src={api.image ? `/images/${api.image}` : '/images/default.webp'}
           alt={api.name}
           width={100}
           height={100}
