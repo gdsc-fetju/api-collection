@@ -1,5 +1,5 @@
 ---
-name: Calendar API
+name: Holidays API
 categories:
   - calendar
 url: https://www.abstractapi.com/api/holidays-api
