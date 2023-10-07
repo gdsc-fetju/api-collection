@@ -3,6 +3,6 @@ name: Holidays API
 categories:
   - calendar
 url: https://www.abstractapi.com/api/holidays-api
-description: Retrieve religious, non-public and public holidays for 200+ countries worldwide and for any specific year
+description: Retrieve holidays for 200+ countries
 free: true
 ---
