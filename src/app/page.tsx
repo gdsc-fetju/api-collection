@@ -5,7 +5,7 @@ import Nav from '@/components/Nav';
 
 export default function Home() {
   return (
-    <main className='bg-stone-100 min-h-screen'>
+    <main className='min-h-screen bg-stone-100'>
       <Nav />
       <h1 className='my-10 text-center text-2xl font-bold'>API Collection</h1>
       {/* TODO: Add Search Bar to Search for a Individual API */}

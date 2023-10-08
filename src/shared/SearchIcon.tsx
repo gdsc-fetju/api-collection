@@ -12,5 +12,5 @@ export function SearchIcon() {
         clipRule='evenodd'
       />
     </svg>
-  )
+  );
 }

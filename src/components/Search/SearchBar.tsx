@@ -16,11 +16,11 @@ const Search = ({ search, setSearch }: SearchProps) => {
       </div>
       <input
         type='text'
-        className='text-2xl block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 pl-16 text-gray-800 focus:border-blue-500 focus:ring-blue-500'
+        className='block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 pl-16 text-2xl text-gray-800 focus:border-blue-500 focus:ring-blue-500'
         placeholder='Search'
         value={search}
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-          setSearch(e.target.value)
+          setSearch(e.target.value);
         }}
       />
     </div>
