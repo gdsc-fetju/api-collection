@@ -1,16 +1,9 @@
 ---
 name: PetFinder API
 categories:
-  - Find home pets
-url: ---
-name: Bitly API
-categories:
-  - Url Shortener
+  - Pets
+  
 url: https://www.petfinder.com/developers/
-description: Petfinder is dedicated to helping pets find homes, and we know you are too. Petfinder's free API is another way we extend your reach to get pets adopted.
-free: true
----
-
-description: URL shortener service
+description:The API provides ready access to data for Petfinder's hundreds of thousands of adoptable pets and the organizations that care for them.
 free: true
 ---
