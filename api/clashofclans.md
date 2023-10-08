@@ -1,11 +1,12 @@
 ---
-name: Chess API
+name: Clash of Clans API
 categories:
   - Player Data
   - Tournaments
   - Team Matches
-url: https://www.chess.com/news/view/published-data-api
-description:  This excludes private information that is restricted to the logged in user, such as game chat and conditional moves.
-free: True
-imageUrl: https://images.chesscomfiles.com/uploads/v1/news/398544.e72c42cb.668x375o.42da47f2061b.png
+url: https://developer.clashofclans.com/#/
+description:  Channel Your Inner Builder with the Clash of Clans API
+free: true
+imageUrl: https://www.google.com/search?q=clashofclans&oq=clashofclans&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg80gEIMjgzNmowajSoAgCwAgA&sourceid=chrome&ie=UTF-8#vhid=yZucerZJbL2OFM&vssid=l
 ---
+
