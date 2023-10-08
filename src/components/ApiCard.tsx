@@ -8,9 +8,8 @@ interface Props {
 
 function ApiCard({ api }: Props) {
   return (
-    <Link target="_blank" href={api.url}>
-
-      <div className='card w-96 bg-base-100 mx-3 my-3 shadow-xl p-4 rounded-lg transform transition-transform hover:scale-105'>
+    <Link target='_blank' href={api.url}>
+      <div className='card mx-3 my-3 w-96 transform rounded-lg bg-base-100 p-4 shadow-xl transition-transform hover:scale-105'>
         <figure>
           <Image
             src={api.image ? `/images/${api.image}` : '/images/default.webp'}
