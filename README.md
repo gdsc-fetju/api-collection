@@ -22,6 +22,7 @@ You need to have the following installed on your machine.
 
 - [Node.js](https://nodejs.org/en/)
 - [pnpm](https://pnpm.js.org/) (preferred)
+- [npm] (https://docs.npmjs.com/cli/v6/commands/npm)
 
 ## Installation
 

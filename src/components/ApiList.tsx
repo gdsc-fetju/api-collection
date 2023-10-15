@@ -29,7 +29,7 @@ function ApiList() {
   return (
     <div className='flex w-11/12 flex-col items-center'>
       <Search setSearch={setSearch} search={search} />
-      <section className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+      <section className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-3'>
         {!filteredApis.length
           ? 'No APIs found'
           : filteredApis.map((api, index) => (

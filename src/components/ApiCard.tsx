@@ -9,7 +9,7 @@ interface Props {
 function ApiCard({ api }: Props) {
   return (
     <Link target='_blank' href={api.url}>
-      <div className='card mx-3 my-3 w-96 transform rounded-lg bg-base-100 p-4 shadow-xl transition-transform hover:scale-105'>
+      <div className='card mx-auto my-2 w-90 transform rounded-lg flex justify-between bg-base-100 p-3 h-80 shadow-xl transition-transform hover:scale-105 hover:bg-gray-300'>
         <figure>
           <Image
             src={api.image ? `/images/${api.image}` : '/images/default.webp'}
