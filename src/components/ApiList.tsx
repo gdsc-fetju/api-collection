@@ -30,16 +30,17 @@ function ApiList() {
     <div className='flex w-11/12 flex-col items-center'>
       <Search setSearch={setSearch} search={search} />
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+        {/* TODO: implement this for filtering */}
+        {/* Currently this is just a placeholder */}
         <section className='bg-gray-200 my-8 md:col-span-1 border rounded-lg '></section>
-        <section className='bg-gray-100  p-4  md:col-span-3'>
-        <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4'>
-          {!filteredApis.length
-            ? 'No APIs found'
-            : filteredApis.map((api, index) => (
+        <section className='bg-gray-100 p-4 md:col-span-3'>
+          <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4'>
+            {!filteredApis.length
+              ? 'No APIs found'
+              : filteredApis.map((api, index) => (
                 <ApiCard key={index} api={api.item} />
-              ))}
-
-              </div>
+            ))}
+          </div>
         </section>
       </div>
     </div>
