@@ -9,7 +9,7 @@ interface Props {
 function ApiCard({ api }: Props) {
   return (
     <Link target='_blank' href={api.url}>
-      <div className=' mx-0 md:mx-3 my-3 flex w-full  transform flex-col rounded-lg bg-base-100 p-4 shadow-xl transition-transform hover:scale-105 sm:w-full sm:flex-col md:flex-row'>
+      <div className=' dark:bg-gray-200 mx-0 md:mx-3 my-3 flex w-full  transform flex-col rounded-lg bg-base-100 p-4 shadow-xl transition-transform hover:scale-105 sm:w-full sm:flex-col md:flex-row'>
         <div className='w-full md:w-1/3'>
           <figure className='lg: mb-4 mr-0 justify-center  pt-5 md:mb-0 md:mr-4 lg:flex'>
             <Image
