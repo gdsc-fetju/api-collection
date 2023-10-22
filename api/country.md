@@ -4,6 +4,6 @@ categories:
   - information
   - utility
 url: https://restcountries.com/
-description: Gives the information about countries
+description: Get information about countries
 free: true
 ---
