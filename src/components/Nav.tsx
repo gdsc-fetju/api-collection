@@ -1,13 +1,23 @@
 import ApiLogo from '@/shared/ApiLogo';
 import GithubLogo from '@/shared/GithubLogo';
+import ThemeToggleIcon  from '@/shared/ThemeToggleIcon';
 import Link from 'next/link';
+import { useState } from 'react';
+
 
 export default function Nav() {
+  const [isDarkMode,setIsDarkMode] = useState<boolean>(false)
+
+  const toggleHandler = () => {
+    setIsDarkMode((value) => !value)
+    document.documentElement.classList.toggle("dark",!isDarkMode)
+  }
+
   return (
-    <nav className='fixed top-0 left-0 z-20 w-full border-b border-gray-200 bg-white dark:border-gray-600 dark:bg-green-700'>
+    <nav className='  fixed top-0 left-0 z-20 w-full border-b border-gray-200 bg-white dark:border-gray-600 dark:bg-[#0b0a0a] '>
       <div className='mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-2'>
         <Link href='/' className='flex items-center'>
-          <ApiLogo />
+          <ApiLogo DarkMode={isDarkMode}/>
           <span className='self-center whitespace-nowrap text-2xl font-semibold dark:text-white'>
             API Collection
           </span>
@@ -21,8 +31,11 @@ export default function Nav() {
               Add API
             </button>
           </Link>
+          <button className='mb-1' onClick={toggleHandler}>
+          <ThemeToggleIcon DarkMode={isDarkMode} />
+          </button>
           <Link href='https://github.com/gdsc-fetju/api-collection'>
-            <GithubLogo />
+            <GithubLogo DarkMode={isDarkMode}/>
           </Link>
         </div>
       </div>
