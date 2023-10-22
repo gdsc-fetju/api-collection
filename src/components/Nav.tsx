@@ -17,7 +17,7 @@ export default function Nav() {
     <nav className='  fixed top-0 left-0 z-20 w-full border-b border-gray-200 bg-white dark:border-gray-600 dark:bg-[#0b0a0a] '>
       <div className='mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-2'>
         <Link href='/' className='flex items-center'>
-          <ApiLogo />
+          <ApiLogo DarkMode={isDarkMode}/>
           <span className='self-center whitespace-nowrap text-2xl font-semibold dark:text-white'>
             API Collection
           </span>

@@ -32,7 +32,7 @@ function ApiList() {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         {/* TODO: implement this for filtering */}
         {/* Currently this is just a placeholder */}
-        <section className='bg-gray-200 my-8 md:col-span-1 border rounded-lg '></section>
+        <section className='dark:bg-gray-500 dark:text-black  bg-gray-200 my-8 md:col-span-1 border rounded-lg '></section>
         <section className=' dark:bg-[#0b0a0a] p-4 md:col-span-3'>
           <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 '>
             {!filteredApis.length
