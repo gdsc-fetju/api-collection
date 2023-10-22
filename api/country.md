@@ -1,5 +1,5 @@
 ---
-name: REST COUNTRIES
+name: Countries API
 categories:
   - information
   - utility
