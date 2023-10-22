@@ -6,4 +6,5 @@ categories:
 url: https://type.fit/api/quotes
 description: Find meaningful quotes for you
 free: true
+image: quote.svg
 ---
