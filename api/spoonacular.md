@@ -7,5 +7,5 @@ categories:
 url: https://spoonacular.com/food-api
 description: This API provides access to information about food, including details on their names, ingredients, nutritional information and recipes
 free: false
-imageUrl: spoonacular.svg
+image: spoonacular.svg
 ---
