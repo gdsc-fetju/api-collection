@@ -27,7 +27,7 @@ categories:
 url: <URL of the API>
 description: <A short description of API>
 free: <true if API is free else false>
-imageUrl: <URL of the image to be displayed> (O)
+image: <URL of the image to be displayed> (O)
 ---
 ```
 
