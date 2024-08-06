@@ -31,7 +31,7 @@ image: <URL of the image to be displayed> (O)
 ---
 ```
 
-- Raise your PR a nd wait for it to get merged.
+- Raise your PR and wait for it to get merged.
 
 ---
 
