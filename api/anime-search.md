@@ -1,7 +1,7 @@
 ---
 name: Anime Search API
 categories:
-  - Entertainment
+  - entertainment
 url: https://api.jikan.moe/v4/anime
 description: Search anime data from MyAnimeList API
 free: true

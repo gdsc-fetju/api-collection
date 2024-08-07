@@ -1,7 +1,7 @@
 ---
 name: Bitly API
 categories:
-  - Url Shortener
+  - url-shortener
 url: https://dev.bitly.com/
 description: URL shortener service
 free: true
